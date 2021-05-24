@@ -1,0 +1,16 @@
+
+.keyboard {
+    width: 450px;
+  height: 400px;
+  background-color: rgba(169, 169, 169, 0.287);
+  border-radius: 5px;
+  padding-right: 20px;
+}
+
+
+.numbers {
+    background-color:darkred;
+    display: inline-block; /* развер по содержимому */
+    border-radius: 3px;
+
+}

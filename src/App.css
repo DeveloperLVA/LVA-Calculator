@@ -36,3 +36,102 @@
     transform: rotate(360deg);
   }
 }
+/* НИЖЕ мой-LVA CSS */
+
+
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+} 
+
+.grid-init {
+  max-width: 300px; /* максимальная ширина контейнера */
+  margin: auto; /* центрирование контейнера на странице */
+  background-color: lightsteelblue; /* фон */
+  padding: 10px; /* внутренние отступы */
+}
+.box-init {
+  font-size: larger; /* размер шрифта */
+  color: #fff; /* цвет текста */
+  border-radius: 5px; /* скругление углов */
+  background-color: #2196f3; /* цвет фона */
+  border: 1px solid black; /* граница блока */
+  padding: 10px; /* внутренние отступы */
+  
+  display: flex; /*  выравнивание текста по центру блока с помощью CSS Flexbox  */
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+
+.l-screen {
+  grid-area: l-screen;
+  background-color:rgba(20, 20, 20, 0.555)
+}
+.l-screen {
+  grid-area: scr;
+}
+.l-numbers {
+  grid-area: num;
+  padding-left: 18px !important;
+}
+.l-calculations {
+  grid-area: cal;
+}
+.l-nul_dot {
+  grid-area: nul;
+}
+.l-equally {
+  grid-area: equ;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+      "scr scr "
+      "num  cal"
+      "num  equ"
+      "nul  equ";
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+
+ .but-scr {
+  text-align: center;
+  font-size: 1em; 
+  width:auto;
+  height: auto; 
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius:4px;
+  
+} 
+
+.but-nul {
+  text-align: center;
+  font-size: 1em ; 
+  width:auto;
+  height: auto; 
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius:4px;
+  
+} 
+
+.but-dot {
+  text-align: center;
+  font-size: 1em ; 
+  width:auto;
+  height: auto; 
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius:4px;
+  
+} 
