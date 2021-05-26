@@ -20,7 +20,7 @@ addToInput = val => {
 };
 
 handleEqual = () => {
-  this.setState ({input: math.eval(this.state.input) });
+  this.setState ({input: math.evaluate(this.state.input) });
 };
 
   render () {
