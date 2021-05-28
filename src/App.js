@@ -4,6 +4,7 @@ import {Button} from './components/Button';
 import { Input } from './components/Input';
 import { ClearButton } from './components/ClearButton';
 import * as math from 'mathjs';
+import logo from './imeg/Logo.png';
 
 
 class App extends Component {
@@ -26,13 +27,14 @@ addToInput = val => {
     this.setState ({
       input: math.evaluate(this.state.input)  });
   };
+
   
   render (){
      return (
         <div className="app">
            <div className="calc-wrapper">
              < Input input={this.state.input}></Input>
-              <div className="row">
+               <div className="row">
                <Button addToInput = {this.addToInput}>7</Button>
                <Button addToInput = {this.addToInput}>8</Button>
                <Button addToInput = {this.addToInput}>9</Button>
@@ -58,10 +60,16 @@ addToInput = val => {
                </div>
 
                <div className="row">
-               <ClearButton handleClear={() => this.setState({ input: ""})}>Clear/Очистить  (LVA)</ClearButton>
+               <ClearButton handleClear={() => this.setState({ input: ""})}>Clear/Очистить</ClearButton>
                </div>
-               <div></div><img src="https://www.dropbox.com/s/ohr6l8mg1fpo8tj/%212-124x66.png?dl=0></div>
-           </div>  
+                              
+               <div className="row">
+        <div className="logo">
+          <img src={logo} width="50" height="25" />
+        </div>
+        </div>
+
+         </div>  
       </div>
     
     );
