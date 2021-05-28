@@ -58,8 +58,9 @@ addToInput = val => {
                </div>
 
                <div className="row">
-               <ClearButton handleClear={() => this.setState({ input: ""})}>Clear/Очистить</ClearButton>
+               <ClearButton handleClear={() => this.setState({ input: ""})}>Clear/Очистить  (LVA)</ClearButton>
                </div>
+               <div></div><img src="https://www.dropbox.com/s/ohr6l8mg1fpo8tj/%212-124x66.png?dl=0></div>
            </div>  
       </div>
     
